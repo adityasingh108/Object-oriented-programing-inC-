@@ -1,0 +1,136 @@
+
+Question 1
+Recall that every variable in C++ has these four things: a name, a type, a value and a memory location.
+
+int *p;
+p = new int;
+*p = 0;
+
+
+For the code above, which one of the following is NOT true for variable p?
+
+
+ ans :- The value of the variable is 0
+
+
+
+
+Question 2
+Which one of the following is true?
+
+ ans:- The address of any memory location in the stack is larger than the address of any memory location in the heap.
+
+Question 3
+Suppose we are writing the following function that is intended to return a pointer to a location in memory holding an integer value initialized to zero.
+
+int *allocate_an_integer() {
+    // declare variable i here
+    *i = 0;
+    return i;
+}
+
+
+How should variable i be declared?
+
+
+ ans:-int *i = new int;
+
+
+
+
+Question 4
+Suppose we have this alternative function that returns a pointer to a memory location to an integer value of zero.
+
+
+int *allocate_an_integer() {
+    int i = 0;
+    return &i;
+}
+
+int main() {
+    int *j;
+    j = allocate_an_integer();
+    int k = *j;
+    return 0;
+
+What value is variable k assigned and why?
+
+ans :- Unknown. Depending on the compiler settings, the compiler may report that a local variable address is being returned, which could be treated as a warning or as a compilation error; Or, if the program is allowed to compile, then at runtime the variable k could be assigned zero, or some other value, or the program may terminate due to a memory fault.
+
+
+
+Question 5
+Suppose we declare a variable as “int i;” Which of the following expressions returns the address of the memory location containing the contents of variable i?
+
+
+ ans :- &i
+
+Question 6
+
+int i = 0;
+int *j = &i;
+
+
+ How many memory allocations are made on the stack and on the heap for the above code? For example, declaring an integer would count as one memory allocation.
+
+
+ ans :-Two allocations on the stack and zero allocations on the heap.
+
+
+
+
+Question 7
+
+int *i = new int;
+How many memory allocations are made on the stack and on the heap for the above code? For example, allocating space for one integer would count as one memory allocation.
+
+ans :-One allocation on the stack and one allocation on the heap.
+
+
+
+
+Question 8
+
+int *i = new int;
+*i = 0;
+int &j = *i;
+j++;
+
+
+What does the last line of the above code segment do?
+
+ ans :- Increments the value pointed to by variable i by one.
+
+Question 9
+int i = 0, j = 1;
+int *ptr = &i;
+
+i = 2;
+*ptr = 3;
+ptr = &j;
+j = i;
+*ptr = 4;
+
+
+Enter the number of different values stored in the same address that variable i has during the execution of the code above. (Your answer should be a single integer, which is the total number of different values assigned to that address.)
+
+ 
+Enter answer here :- 3
+ 
+Question 10
+
+class Pair {
+    public: double a,b;
+};
+
+int main() {
+    Pair *p = new Pair;
+    p->a = 0.0;
+    return 0;
+}
+
+
+The expression p->a is equivalent to which one of the following?
+ 
+ans :-(*p).a
+

@@ -1,0 +1,39 @@
+answer 1 :- When declaring a constructor for a class, the name of the constructor must be the name of the class
+
+
+answer 2:-  cube a,b(10);
+            a=b;
+			
+answer 3 :- The custom assignment operator is a public member function of the class.
+
+answer 4 :-At least one custom, non-default constructor , Copy constructor
+          Assignment operator,Destructor
+		  
+answer 5:- Default constructor
+Copy constructor
+Assignment operator
+Destructor
+
+
+answer 6 :-  5
+
+answer 7 :- The destructor is called automatically when the delete operator is used with a pointer to the instance of the class.
+
+answer 8 :-  once 
+
+answer 9 :- A pointer to the current object instance.
+
+answer 10 :- 
+void track_stuff() {
+    Track t;
+    Track *p = new Track;
+    // ...
+    delete p;
+    return;
+}
+
+
+
+
+
+		  

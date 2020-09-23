@@ -1,0 +1,30 @@
+ answer 1 :- Every variable in C++ has to be associated with a specific type
+ 
+answer 2 :-  main() 
+
+answer 3 :-  A class can consist of multiple member data variables of different types, but each type must be specified when the class is defined.
+
+answer 4 :- The member functions of a class always have access to every member data variable of that class.
+
+answer 5 :-  #include
+
+answer 6:- uiuc::Pair p;
+ 
+ answer 7 :- using 
+
+answer 8 :- Because two different libraries might use the same label for a class or variable
+
+answer 9:-  std 
+
+answer 10 :- <<
+ 
+
+
+
+
+
+
+
+  
+  
+

@@ -1,0 +1,24 @@
+answer 1 :-  C++ allows a local variable to be declared in main() with an unknown type that can be defined when the program is executed.
+
+
+answer 2 :- std::vector<int>v;
+
+answer 3:- std::vector v;
+
+answer 4:- max(5.0,10.0)
+
+answer  5:- max(a.num,b.num)
+
+answer 6 :- class Rubikcube:Public Cube{...};
+
+answer 7:-
+equalPair(double a, double b) {
+    Pair(a,b);
+    isequal = (a == b);
+}
+
+answer 8:-  Just the member variable isequal  of equalpair.
+
+answer 9:- Both constructor on lines 5 and 6 compile properly
+
+answer 10:- ... the greatest language for programing data structure ever!
